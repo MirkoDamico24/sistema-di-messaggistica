@@ -6,7 +6,6 @@
 #include <sys/socket.h>
 #include "sock_ops.h"
 #include "types.h"
-#include "server_ops.h"  
 
 /*
  * The following function reads data from the socket, whose
