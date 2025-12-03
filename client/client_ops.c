@@ -14,7 +14,7 @@
 //private libraries
 #include "client_ops.h"
 #include "client_types.h"
-#include "../libs/sock_ops.h"
+#include "sock_ops.h"
 
 #define error(x) {printf("%s\n", x); exit(EXIT_FAILURE);}
 
