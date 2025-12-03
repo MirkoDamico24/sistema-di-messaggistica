@@ -14,9 +14,9 @@
 #include <arpa/inet.h>
 
 //private libs
-#include "../libs/types.h"
-#include "../libs/server_ops.h"
-#include "../libs/sock_ops.h"
+#include "types.h"
+#include "server_ops.h"
+#include "sock_ops.h"
 
 #define error(x) {printf("%s\n", x); exit(EXIT_FAILURE);}
 #define MAX_TRIES 5  //max number of tries done if accept failes
