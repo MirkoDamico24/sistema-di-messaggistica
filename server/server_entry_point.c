@@ -266,7 +266,7 @@ void *server_t(void *ptr)
 							   perror("Error on connection");
 							   pthread_exit(NULL);
 						   }
-						   printf("Server entry point uname = %s\n", try1->uname);
+						   printf("Server entry point uname = %s\n", aut_data1->uname);
 						   memcpy(uname, aut_data1->uname, sizeof(aut_data1->uname));
 					       break;
 
