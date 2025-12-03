@@ -1,8 +1,8 @@
 SERVER = server
 
 sign:
-	gcc -o server_ops.o ../libs/server_ops.c -c
-	gcc -o sock_ops.o ../libs/sock_ops.c -c
+	gcc -o server_ops.o server_ops.c -c
+	gcc -o sock_ops.o sock_ops.c -c
 
 server: sign
 	gcc -o server_entry_point.o server_entry_point.c -c
