@@ -8,3 +8,4 @@ client:  lib
 
 clean:
 	rm -f *.o
+	rm -f client
