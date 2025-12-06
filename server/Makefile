@@ -10,7 +10,7 @@ sign:
 
 server: sign | $(USER_FILES)
 	gcc -o server_entry_point.o server_entry_point.c -c
-	gcc -o $(SERVER) server_entry_point.o server_ops.o sock_ops.o
+	gcc -pthread -o $(SERVER) server_entry_point.o server_ops.o sock_ops.o
 
 clear: 
 	rm -f *.o
