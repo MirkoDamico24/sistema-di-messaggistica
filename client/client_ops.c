@@ -101,7 +101,7 @@ void delete_msg(int sock_ds)
 	memcpy(&rep, buffer, sizeof(s_replay));
 
 	if(rep.error == 1){
-		if(rep.error_code = EMEMLEAK){
+		if(rep.error_code == EMEMLEAK){
 			printf("Server coudl not perform the operation. Try again\n");
 			return;
 		}
